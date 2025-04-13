@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tomica Official Mini Store</title>
+  <title>TomyStation - Mô Hình Chính Hãng</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -14,58 +14,62 @@
 
     body {
       font-family: 'Roboto', sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f5f7fa;
       color: #333;
     }
 
     header {
-      background-color: #e60012;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
+      background-color: white;
+      padding: 20px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    header img {
+      height: 60px;
     }
 
     header h1 {
-      font-size: 36px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 18px;
+      font-size: 26px;
+      color: #1f2d3d;
+      font-weight: 700;
     }
 
     .banner {
       background: url('https://www.tomy-asia.com/themes/custom/tomy/images/banner-top.jpg') center/cover no-repeat;
-      height: 250px;
+      height: 280px;
+      margin-bottom: 30px;
     }
 
     .section-title {
       text-align: center;
-      margin: 40px 0 20px;
       font-size: 28px;
+      margin-bottom: 20px;
+      color: #f4511e;
       font-weight: bold;
-      color: #e60012;
     }
 
     .product-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 0 30px 50px;
+      gap: 24px;
+      padding: 0 40px 60px;
       max-width: 1200px;
       margin: auto;
     }
 
     .product-card {
       background: white;
-      border-radius: 12px;
+      border-radius: 14px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
       overflow: hidden;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s ease;
     }
 
     .product-card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-6px);
     }
 
     .product-card img {
@@ -75,43 +79,57 @@
     }
 
     .product-info {
-      padding: 15px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .product-info h3 {
       font-size: 18px;
       margin-bottom: 10px;
+      color: #1f2d3d;
     }
 
     .product-info a {
-      display: inline-block;
+      text-align: center;
       text-decoration: none;
-      background: #e60012;
+      background: #f4511e;
       color: white;
-      padding: 10px 16px;
-      border-radius: 6px;
+      padding: 10px 14px;
+      border-radius: 8px;
       font-weight: bold;
       transition: background 0.3s ease;
     }
 
     .product-info a:hover {
-      background: #c3000f;
+      background: #d63b0d;
     }
 
     footer {
-      background: #1a1a1a;
+      background: #1f2d3d;
       color: #ccc;
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      header img {
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Tomica Mini Store</h1>
-    <p>Sưu tầm mô hình cực chất – Chính hãng Takara Tomy</p>
+    <img src="LOGO.jpg" alt="TomyStation Logo">
+    <h1>TomyStation</h1>
   </header>
 
   <div class="banner"></div>
@@ -130,16 +148,16 @@
     <div class="product-card">
       <img src="https://cf.shopee.vn/file/example456xyz" alt="Tomica Xe Cảnh Sát">
       <div class="product-info">
-        <h3>Tomica - Xe Cảnh Sát Nhật Bản</h3>
+        <h3>Tomica - Xe Cảnh Sát Nhật</h3>
         <a href="https://shopee.vn/link-sp-2" target="_blank">Mua trên Shopee</a>
       </div>
     </div>
 
-    <!-- Thêm sản phẩm khác tương tự -->
+    <!-- Thêm sản phẩm khác tại đây -->
   </div>
 
   <footer>
-    © 2025 Tomica Mini Store. Powered by Shopee.
+    © 2025 TomyStation. Được hỗ trợ bởi Shopee Việt Nam.
   </footer>
 
 </body>
