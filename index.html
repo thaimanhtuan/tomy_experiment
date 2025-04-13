@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shop Mini - Đồ Chơi Mô Hình</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f2f2f2;
+      color: #333;
+    }
+
+    header {
+      background: #e60012;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-info {
+      padding: 15px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-info h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+
+    .product-info a {
+      text-decoration: none;
+      background: #e60012;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    .product-info a:hover {
+      background: #cc000f;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Shop Mô Hình Tomica & Đồ Chơi</h1>
+    <p>Click để xem chi tiết và mua trên Shopee</p>
+  </header>
+
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="https://cf.shopee.vn/file/123abc456xyz" alt="Tomica xe cứu hỏa">
+      <div class="product-info">
+        <h3>Tomica - Xe Cứu Hỏa</h3>
+        <a href="https://shopee.vn/your-product-link-1" target="_blank">Xem trên Shopee</a>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://cf.shopee.vn/file/789xyz000aaa" alt="Tomica xe cảnh sát">
+      <div class="product-info">
+        <h3>Tomica - Xe Cảnh Sát</h3>
+        <a href="https://shopee.vn/your-product-link-2" target="_blank">Xem trên Shopee</a>
+      </div>
+    </div>
+
+    <!-- Thêm nhiều sản phẩm tương tự ở đây -->
+  </div>
+
+</body>
+</html>
