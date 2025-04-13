@@ -6,17 +6,9 @@
   <title>TomyStation - Mô Hình Chính Hãng</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: 'Roboto', sans-serif;
-      background-color: #f5f7fa;
-      color: #333;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Roboto', sans-serif; background-color: #f5f7fa; color: #333; }
+    a { text-decoration: none; color: inherit; }
 
     header {
       background-color: white;
@@ -25,20 +17,17 @@
       align-items: center;
       justify-content: space-between;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      flex-wrap: wrap;
     }
-
-    header img {
-      height: 60px;
-    }
-
-    header h1 {
-      font-size: 26px;
+    header img { height: 60px; }
+    nav a {
+      margin-left: 20px;
+      font-weight: bold;
       color: #1f2d3d;
-      font-weight: 700;
     }
 
     .banner {
-      background: url('https://www.tomy-asia.com/themes/custom/tomy/images/banner-top.jpg') center/cover no-repeat;
+      background: url('https://www.takaratomyasia.com/themes/custom/tomy/images/banner-top.jpg') center/cover no-repeat;
       height: 280px;
       margin-bottom: 30px;
     }
@@ -46,7 +35,7 @@
     .section-title {
       text-align: center;
       font-size: 28px;
-      margin-bottom: 20px;
+      margin: 40px 0 20px;
       color: #f4511e;
       font-weight: bold;
     }
@@ -67,98 +56,103 @@
       overflow: hidden;
       transition: transform 0.2s ease;
     }
-
-    .product-card:hover {
-      transform: translateY(-6px);
-    }
-
+    .product-card:hover { transform: translateY(-6px); }
     .product-card img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
+      width: 100%; height: 200px; object-fit: cover;
     }
-
     .product-info {
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
+      padding: 16px; display: flex; flex-direction: column;
     }
-
-    .product-info h3 {
-      font-size: 18px;
-      margin-bottom: 10px;
-      color: #1f2d3d;
+    .product-info h3 { font-size: 18px; margin-bottom: 10px; }
+    .product-info a.btn {
+      background: #f4511e; color: white;
+      padding: 10px; border-radius: 8px;
+      font-weight: bold; text-align: center;
+      margin-top: auto;
     }
+    .product-info a.btn:hover { background: #d63b0d; }
 
-    .product-info a {
-      text-align: center;
-      text-decoration: none;
-      background: #f4511e;
-      color: white;
-      padding: 10px 14px;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s ease;
+    .blog-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
     }
+    .blog-post {
+      background: white; padding: 20px; border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+    }
+    .blog-post h4 { margin-bottom: 10px; color: #1f2d3d; }
+    .blog-post p { color: #555; }
 
-    .product-info a:hover {
-      background: #d63b0d;
+    .cart-section {
+      max-width: 800px; margin: auto; background: white;
+      padding: 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
 
     footer {
-      background: #1f2d3d;
-      color: #ccc;
-      text-align: center;
-      padding: 25px;
+      background: #1f2d3d; color: #ccc;
+      text-align: center; padding: 25px;
       font-size: 14px;
+      margin-top: 40px;
     }
 
     @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        text-align: center;
-      }
-      header img {
-        margin-bottom: 10px;
-      }
+      header { flex-direction: column; text-align: center; }
+      nav a { display: inline-block; margin: 10px 5px; }
     }
   </style>
 </head>
 <body>
-
   <header>
     <img src="LOGO.jpg" alt="TomyStation Logo">
     <h1>TomyStation</h1>
+    <nav>
+      <a href="#products">Sản phẩm</a>
+      <a href="#blog">Blog</a>
+      <a href="#cart">Giỏ hàng</a>
+    </nav>
   </header>
 
   <div class="banner"></div>
 
-  <div class="section-title">Sản phẩm nổi bật</div>
-
+  <div id="products" class="section-title">Sản phẩm nổi bật</div>
   <div class="product-grid">
     <div class="product-card">
       <img src="https://cf.shopee.vn/file/abc123example" alt="Xe Tomica">
       <div class="product-info">
         <h3>Tomica - Xe Bus Thành Phố</h3>
-        <a href="https://shopee.vn/link-sp-1" target="_blank">Mua trên Shopee</a>
+        <a href="https://shopee.vn/link-sp-1" class="btn" target="_blank">Mua trên Shopee</a>
       </div>
     </div>
-
     <div class="product-card">
       <img src="https://cf.shopee.vn/file/example456xyz" alt="Tomica Xe Cảnh Sát">
       <div class="product-info">
         <h3>Tomica - Xe Cảnh Sát Nhật</h3>
-        <a href="https://shopee.vn/link-sp-2" target="_blank">Mua trên Shopee</a>
+        <a href="https://shopee.vn/link-sp-2" class="btn" target="_blank">Mua trên Shopee</a>
       </div>
     </div>
+  </div>
 
-    <!-- Thêm sản phẩm khác tại đây -->
+  <div id="blog" class="section-title">Blog Tin Tức</div>
+  <div class="blog-section">
+    <div class="blog-post">
+      <h4>Top 5 Mô Hình Tomica Được Yêu Thích Nhất</h4>
+      <p>Khám phá những mẫu xe mô hình Tomica đang được các bé và nhà sưu tập săn lùng nhiều nhất 2025!</p>
+    </div>
+    <div class="blog-post">
+      <h4>Bí quyết chọn đồ chơi an toàn cho bé</h4>
+      <p>Những lưu ý quan trọng khi chọn đồ chơi phù hợp với độ tuổi và phát triển tư duy cho trẻ.</p>
+    </div>
+  </div>
+
+  <div id="cart" class="section-title">Giỏ hàng</div>
+  <div class="cart-section">
+    <p>Bạn đang được chuyển hướng đến Shopee để thanh toán an toàn và tiện lợi. <br>Nhấn vào nút "Mua trên Shopee" ở từng sản phẩm để tiếp tục.</p>
   </div>
 
   <footer>
     © 2025 TomyStation. Được hỗ trợ bởi Shopee Việt Nam.
   </footer>
-
 </body>
 </html>
